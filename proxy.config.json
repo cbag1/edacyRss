@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://www.lemonde.fr/rss/",
+        "secure": false,
+        "logLevel": "info"
+    },
+}
