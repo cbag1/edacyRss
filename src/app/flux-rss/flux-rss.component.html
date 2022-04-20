@@ -17,15 +17,17 @@
             <carousel [cellsToShow]="4" [height]="500">
 
                 <div *ngFor="let item of xmlItems.item; let index = index" class="carousel-cell rssitem">
-                    <h3>
-                        {{
-                        item.title
-                        }}
-                    </h3>
+                    
                     <div class="img">
                         <img [src]="item['media:content']['0']['$'].url" alt="">
                     </div>
-
+                    <a [href]="item.link">
+                        <h3>
+                            {{
+                            item.title
+                            }}
+                        </h3>
+                    </a>
                     <p>
                         {{
                         item.description
