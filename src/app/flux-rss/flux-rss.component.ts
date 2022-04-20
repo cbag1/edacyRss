@@ -33,7 +33,7 @@ export class FluxRssComponent {
           .then((data) => {
             this.xmlItems = data;
             this.xmlItems = this.xmlItems['rss']['channel']['0'];
-            console.log(this.xmlItems)
+            console.log(this.xmlItems.item['1'])
           });
       });
     /*Read Data*/
